@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Contact</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
 </head>
 <body>
-  <!-- Navbar copied from index.html -->
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Form -->
   <div class="container mt-5">
     <h2>Contact Me</h2>
     <form id="contactForm">
       <div class="form-group">
         <label>Name</label>
-        <input type="text" class="form-control" required>
+        <input type="text" class="form-control" required/>
       </div>
       <div class="form-group">
         <label>Email</label>
-        <input type="email" class="form-control" required>
+        <input type="email" class="form-control" required/>
       </div>
       <div class="form-group">
         <label>Message</label>
@@ -26,6 +42,8 @@
       <button type="submit" class="btn btn-primary">Send</button>
     </form>
   </div>
+
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
